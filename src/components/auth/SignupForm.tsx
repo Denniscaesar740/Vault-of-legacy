@@ -41,10 +41,10 @@ export function SignupForm({ onSwitchToLogin }: SignupFormProps) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-teal-50 via-white to-indigo-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
-          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-purple-600 mx-auto mb-4">
+          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-teal-500 to-indigo-600 mx-auto mb-4">
             <Vault className="h-8 w-8 text-white" />
           </div>
           <h2 className="text-3xl font-bold text-gray-900">Create your account</h2>
@@ -80,7 +80,7 @@ export function SignupForm({ onSwitchToLogin }: SignupFormProps) {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
+                  className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors duration-200"
                   placeholder="Enter your full name"
                 />
               </div>
@@ -102,7 +102,7 @@ export function SignupForm({ onSwitchToLogin }: SignupFormProps) {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
+                  className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors duration-200"
                   placeholder="Enter your email"
                 />
               </div>
@@ -124,7 +124,7 @@ export function SignupForm({ onSwitchToLogin }: SignupFormProps) {
                   required
                   value={formData.password}
                   onChange={handleChange}
-                  className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
+                  className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors duration-200"
                   placeholder="Create a password"
                 />
                 <button
@@ -168,7 +168,7 @@ export function SignupForm({ onSwitchToLogin }: SignupFormProps) {
                   required
                   value={formData.confirmPassword}
                   onChange={handleChange}
-                  className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
+                  className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors duration-200"
                   placeholder="Confirm your password"
                 />
                 <button
@@ -195,20 +195,20 @@ export function SignupForm({ onSwitchToLogin }: SignupFormProps) {
               name="terms"
               type="checkbox"
               required
-              className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+              className="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded"
             />
             <label htmlFor="terms" className="ml-2 block text-sm text-gray-700">
               I agree to the{' '}
-              <a href="#" className="text-blue-600 hover:text-blue-500">Terms of Service</a>
+              <a href="#" className="text-teal-600 hover:text-teal-500">Terms of Service</a>
               {' '}and{' '}
-              <a href="#" className="text-blue-600 hover:text-blue-500">Privacy Policy</a>
+              <a href="#" className="text-teal-600 hover:text-teal-500">Privacy Policy</a>
             </label>
           </div>
 
           <button
             type="submit"
             disabled={isLoading || formData.password !== formData.confirmPassword}
-            className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
+            className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-gradient-to-r from-teal-500 to-indigo-600 hover:from-teal-600 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
           >
             {isLoading ? (
               <Loader2 className="h-5 w-5 animate-spin" />
@@ -222,7 +222,7 @@ export function SignupForm({ onSwitchToLogin }: SignupFormProps) {
             <button
               type="button"
               onClick={onSwitchToLogin}
-              className="text-sm text-blue-600 hover:text-blue-500 font-medium"
+              className="text-sm text-teal-600 hover:text-teal-500 font-medium"
             >
               Sign in
             </button>

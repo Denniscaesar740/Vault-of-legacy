@@ -38,7 +38,7 @@ export function Header() {
         <div className="relative">
           <button type="button" className="-m-1.5 flex items-center p-1.5">
             <span className="sr-only">Open user menu</span>
-            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
+            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-teal-500 to-indigo-600 flex items-center justify-center">
               <span className="text-sm font-medium text-white">JD</span>
             </div>
             <span className="hidden lg:flex lg:items-center">
