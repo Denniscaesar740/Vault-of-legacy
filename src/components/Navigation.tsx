@@ -47,7 +47,7 @@ function classNames(...classes: string[]) {
       <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-4 shadow-xl">
         <div className="flex h-16 shrink-0 items-center">
           <div className="flex items-center space-x-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-purple-600">
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-teal-500 to-indigo-600">
               <Vault className="h-6 w-6 text-white" />
             </div>
             <div>
@@ -66,14 +66,14 @@ function classNames(...classes: string[]) {
                       onClick={() => onPageChange(item.page)}
                       className={classNames(
                         currentPage === item.page
-                          ? 'bg-blue-50 text-blue-700 border-r-2 border-blue-600'
-                          : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50',
+                          ? 'bg-teal-50 text-teal-700 border-r-2 border-teal-600'
+                          : 'text-gray-700 hover:text-teal-600 hover:bg-gray-50',
                         'group flex gap-x-3 rounded-l-md p-3 text-sm leading-6 font-medium transition-colors duration-200 w-full text-left'
                       )}
                     >
                       <item.icon
                         className={classNames(
-                          currentPage === item.page ? 'text-blue-600' : 'text-gray-400 group-hover:text-blue-600',
+                          currentPage === item.page ? 'text-teal-600' : 'text-gray-400 group-hover:text-teal-600',
                           'h-5 w-5 shrink-0'
                         )}
                         aria-hidden="true"
